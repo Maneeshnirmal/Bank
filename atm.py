@@ -1,3 +1,6 @@
+#ATM Program
+print("Welcome to State bank of India")
+
 x = input('Enter your pin:')
 """""
 num = float(input("Enter a number: "))
@@ -10,17 +13,18 @@ else:
     print("Negative number")
 """
 print('Hello, ' + x)
-print("1.balenced amount in bank\n 2.withdraw\n 3.deposit\n")
+print("1.withdraw\n 2.balenced amount in bank\n  3.deposit\n")
 m = int(input("enter the choice:"))
-total = 1000
+t = 1000
 if m==1:
-    if withdraw ==0:
-     balenced_amount = total - withdraw
-    print("balenced amount is:",balenced_amount)
+    w = int(input("Enter withdraw amount: "))
+    if (w <= t and w % 100 == 0):
+        print("Please take your amount:", w)
+    else:
+        print("Invalid cash")
 
-if m==2:
-    withdraw = int(input("enter the withdraw:"))
-    print("withdraw amount is:",withdraw)
+elif(m==2):
+ print("Your available amount : ",t)
 if m == 3:
         print("deposit:", 456)
 """""
